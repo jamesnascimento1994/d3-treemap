@@ -5,15 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <title>Tree Map Diagram</title>
 </head>
 <body>
     <h1 id="title">Video Game Sales</h1>
     <h4 id="description">Top 100 Video Game Sales</h4>
-    <svg id="canvas">
-
+    <div id="container">
+        <svg id="canvas">
+            
+        </svg>
+        <div id="right-side">
+        <div id="tooltip">
+            
+        </div>
+    <svg id="legend">
+        <g>
+            <rect class="legend-item" x='10' y='0' width='40' height='40' fill='sandybrown'></rect>
+            <text x='60' y='20' fill='black'>Atari 2600</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='40' width='40' height='40' fill='whitesmoke'></rect>
+            <text x='60' y='60' fill='black'>Nintendo Wii</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='80' width='40' height='40' fill='indianred'></rect>
+            <text x='60' y='100' fill='black'>Nintendo Entertainment System</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='120' width='40' height='40' fill='darkslateblue'></rect>
+            <text x='60' y='140' fill='black'>Game Boy</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='160' width='40' height='40' fill='turquoise'></rect>
+            <text x='60' y='180' fill='black'>Nintendo DS</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='200' width='40' height='40' fill='darkolivegreen'></rect>
+            <text x='60' y='220' fill='black'>Xbox 360</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='240' width='40' height='40' fill='darkgray'></rect>
+            <text x='60' y='260' fill='black'>Play Station 3</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='280' width='40' height='40' fill='dimgray'></rect>
+            <text x='60' y='300' fill='black'>Play Station 2</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='320' width='40' height='40' fill='mediumpurple'></rect>
+            <text x='60' y='340' fill='black'>Super Nintendo Entertainment System</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='360' width='40' height='40' fill='lightslategray'></rect>
+            <text x='60' y='380' fill='black'>Game Boy Advanced</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='400' width='40' height='40' fill='royalblue'></rect>
+            <text x='60' y='420' fill='black'>Play Station 4</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='440' width='40' height='40' fill='firebrick'></rect>
+            <text x='60' y='460' fill='black'>Nintendo 3DS</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='480' width='40' height='40' fill='orange'></rect>
+            <text x='60' y='500' fill='black'>Nintendo 64</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='520' width='40' height='40' fill='darkkhaki'></rect>
+            <text x='60' y='540' fill='black'>Play Station</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='560' width='40' height='40' fill='yellowgreen'></rect>
+            <text x='60' y='580' fill='black'>Xbox</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='600' width='40' height='40' fill='gray'></rect>
+            <text x='60' y='620' fill='black'>Personal Computer</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='640' width='40' height='40' fill='mediumturquoise'></rect>
+            <text x='60' y='660' fill='black'>Play Station Portable</text>
+        </g>
+        <g>
+            <rect class="legend-item" x='10' y='680' width='40' height='40' fill='forestgreen'></rect>
+            <text x='60' y='700' fill='black'>Xbox One</text>
+        </g>
     </svg>
+    </div>
+    </div>
 </body>
     <script defer src="script.js"></script>
     <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
