@@ -13,6 +13,7 @@
 ## Technologies Used
 
 Programming Languages: HTML, CSS, JavaScript
+
 Frameworks/Libraries: D3js
 
 App deployed on Netlify
